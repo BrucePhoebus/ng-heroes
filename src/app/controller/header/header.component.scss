@@ -1,0 +1,25 @@
+.heroes-header {
+    width: 100%;
+    $height: 80px;
+    height: $height;
+    line-height: $height;
+    background-color: #cfd8dc;
+
+    .header-left {
+        display: inline-block;
+
+        .header-home {
+            font-size: 44px;
+            text-decoration: none;
+            margin: 0 20px;
+        }
+    }
+
+    .header-right {
+        float: right;
+
+        .dropdown {
+            margin: 0 10px;
+        }
+    }
+}

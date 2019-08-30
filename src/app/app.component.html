@@ -1,11 +1,13 @@
-<h1>{{title}}</h1>
+<header>
+    <app-header></app-header>
+</header>
 
 <nav>
-    <a routerLink="/dashboard">Dashboard</a>
-    <a routerLink="/heroes">Heroes</a>
+    <app-nav-hero></app-nav-hero>
 </nav>
 
 <!-- 路由出口，使用路由导航 -->
 <router-outlet></router-outlet>
 
-<app-messages></app-messages>
+<!--<app-messages></app-messages>-->
+<!--<app-test-bootstrap-ngx></app-test-bootstrap-ngx>-->

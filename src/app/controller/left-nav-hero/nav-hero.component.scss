@@ -1,0 +1,30 @@
+.nav-hero {
+    text-align: center;
+    width: 200px;
+    $height: 20px;
+    height: $height;
+    line-height: $height;
+
+    li {
+        padding: 10px 20px;
+        text-decoration: none;
+        display: block;
+        margin: 5px 0;
+        background-color: #eee;
+        border-radius: 2px;
+        list-style-type: none;
+
+        &:visited, a:link {
+            color: #334953;
+        }
+
+        &:hover {
+            color: #039be5;
+            background-color: #cfd8dc;
+        }
+
+        &.active {
+            color: #039be5;
+        }
+    }
+}

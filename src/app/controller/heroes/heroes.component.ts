@@ -9,7 +9,11 @@ import { HeroService } from '../../service/hero.service'
 
 @Component({
   selector: 'app-heroes',
-  templateUrl: './heroes.component.html',
+  // templateUrl: './heroes.component.html',
+  template: `
+    <h2>Heroes</h2>
+    <app-hero-list></app-hero-list>
+  `,
   styleUrls: ['./heroes.component.scss']
 })
 export class HeroesComponent implements OnInit {
@@ -18,7 +22,7 @@ export class HeroesComponent implements OnInit {
 
   constructor(
       // 注入HeroService，创建一个HeroService单例对象：heroService
-      private heroService: HeroService
+      private heroService: HeroService,
   ) {
   }
 

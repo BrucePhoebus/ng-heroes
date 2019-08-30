@@ -1,27 +1,22 @@
 # NgHeroes
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.2.2.
+## 运行
 
-## Development server
+```bash
+npm run start/dev --open
+# http://localhost:4200/
+```
 
-Run `ng serve --open` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## 编译打包
 
-## Code scaffolding
+```bash
+npm run build
+```
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## 部署到github page
 
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+```bash
+# 首先要把项目放到github上
+ng build --prod --output-path docs --base-href
+# 执行完打包命令，项目根目录会生产docs文件，推送到github，在github page选择 ng-heroes/docs部署
+```
